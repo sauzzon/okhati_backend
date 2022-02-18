@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 
 const connectDatabase = require("./database/connect");
-const authenticateUser = require("./middleware/authentication");
+const authenticateUser = require("./middlewares/authentication");
 
 // routers
 const authRouter = require("./routes/authentication");
