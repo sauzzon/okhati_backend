@@ -3,6 +3,9 @@ require("express-async-errors");
 
 const express = require("express");
 const app = express();
+const cors = require('cors')
+
+app.use(cors())
 
 const connectDatabase = require("./database/connect");
 const authenticateUser = require("./middlewares/authentication");
